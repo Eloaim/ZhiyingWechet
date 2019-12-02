@@ -1,0 +1,10 @@
+/* pages/SchoolDetail/GuideNewsDetail/GuideNewsDetail.wxss */
+.container{
+  padding: 20rpx;
+  font-size: 0.85em;
+}
+.text{
+  display: flex;
+  justify-content: center;
+  font-size: 1.15em;
+}

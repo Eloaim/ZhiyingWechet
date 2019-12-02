@@ -1,0 +1,159 @@
+<!--pages/SchoolDetail/SchoolDetail.wxml-->
+<view class='schooldetail-content'>
+  <view class='school-body'>
+    <view class='school-detail'>
+      <!--school-log-start-->
+      <view class='school-log'>
+         <image mode='aspectFix' wx:if="{{schooldetail.logoName}}" src='https://www.zhiyingguihua.com/school-logo/{{schooldetail.logoName}}'></image>
+
+        <view class='school-log-body'>
+          <text>{{schooldetail.school_name}}</text>
+          <view class='school-tag'>
+            <text wx:if="{{schooldetail.school_property_name[0] != null}}" wx:for="{{schooldetail.school_property_name}}" wx:key=" *this">{{item}}</text>
+          </view>
+        </view>
+
+      </view>
+
+      <!--school-log-end-->
+
+      <!--school-tag-start-->
+        <view class='school-state'>
+
+          <view class="circle">
+            <image mode='aspectFix' src='./school-state-logo/schoolCreatTime.png'> </image>
+            <text wx:if="{{schooldetail.schoolCreateTime != null}}">{{schooldetail.schoolCreateTime}}</text>
+            <text wx:elif="{{schooldetail.schoolCreateTime == null}}">-</text>
+          </view>
+
+          <view class="circle">
+            <image mode='aspectFix' src='./school-state-logo/school_nature_name.png'></image>
+            <text wx:if="{{schooldetail.school_nature_name[0] != null}}">{{schooldetail.school_nature_name}}</text>
+            <text wx:elif="{{schooldetail.school_nature_name[0] == null}}">-</text>
+          </view>
+
+          <view class="circle">
+            <image mode='aspectFix' src='./school-state-logo/school_type_name.png'></image>
+            <text wx:if="{{schooldetail.school_type_name[0] != null}}">{{schooldetail.school_type_name}}</text>
+            <text wx:elif="{{schooldetail.school_type_name[0] == null}}">-</text>
+          </view>
+        </view>
+
+        <view class='school-state'>
+        <view class="circle">
+          <image mode='aspectFix' src='./school-state-logo/province_name.png'> </image>
+          <text wx:if="{{schooldetail.province_name[0] != null}}">{{schooldetail.province_name}}</text>
+          <text wx:elif="{{schooldetail.province_name[0] == null}}">-</text>
+        </view>
+
+        <view class="circle">
+          <image mode='aspectFix' src='./school-state-logo/masterNum.png'></image>
+          <text wx:if="{{schooldetail.masterNum != null}}">{{schooldetail.masterNum}}</text>
+          <text wx:elif="{{schooldetail.masterNum == null}}">-</text>
+        </view>
+
+        <view class="circle">
+          <image mode='aspectFix' src='./school-state-logo/doctorNum.png'></image>
+          <text wx:if="{{schooldetail.doctorNum != null}}">{{schooldetail.doctorNum}}</text>
+          <text wx:elif="{{schooldetail.doctorNum == null}}">-</text>
+        </view>
+        </view>
+      <!--school-tag-end-->
+
+      <navigator style='padding-bottom:5' url='./school-intro/school-intro'>
+        <view class='school_intro'>{{schooldetail.school_intro}}</view>
+      </navigator>
+    </view>
+
+    <!--招生简章-start-->
+      <view class='GuideNews-body'>
+        <text class='GuideNews-title'>招生简章</text>
+       
+           <view  wx:for="{{guideNews}}" wx:key=" *this">
+            <navigator class='GuideNews-viewTime' url='./GuideNewsDetail/GuideNewsDetail?uuid={{item.uuid}}'>
+              <view>{{item.title}}</view>
+              <view class='time-viewTime'>
+                <view class='Time'>{{time}}</view>
+                <view>
+                  <text>浏览</text>{{item.viewTimes}}</view>
+              </view>
+               </navigator>
+            </view>
+     
+       
+      </view>
+
+    <!--招生简章-end-->
+
+    <!--学校排名-start-->
+      <view class='Rank'>
+        <view class='Rank-item'>
+          <text wx:if="{{schoolRank.rank}}">{{schoolRank.rank}}</text>
+          <text wx:else>-</text>
+          <text class='Rank-item-name'>武书连</text>
+        </view>
+
+        <view class='Rank-item'>
+          <text wx:if="{{schoolRank.ruankeRank}}">{{schoolRank.ruankeRank}}</text>
+          <text wx:else>-</text>
+          <text class='Rank-item-name'>软科</text>
+        </view>
+
+        <view class='Rank-item'>
+          <text wx:if="{{schoolRank.schoolFriendRank}}">{{schoolRank.schoolFriendRank}}</text>
+          <text wx:else>-</text>
+          <text class='Rank-item-name'>校友会</text>
+        </view>
+
+        <view class='Rank-item'>
+          <text wx:if="{{schoolRank.qsRank}}">{{schoolRank.qsRank}}</text>
+          <text wx:else>-</text>
+          <text class='Rank-item-name'>QS</text>
+        </view>
+
+        <view class='Rank-item'>
+          <text wx:if="{{schoolRank.usnewsRank}}">{{schoolRank.usnewsRank}}</text>
+          <text wx:else>-</text>
+          <text class='Rank-item-name'>USNews</text>
+        </view>
+      </view>
+    <!--学校排名-end-->
+
+    <!--院校分数线-start-->
+
+    <view class='SchoolScoreList'>
+      <view class='SchoolScoreList-title'>院校分数线</view>
+
+      <van-radio-group class='change' value="{{ radio }}" bind:change="onChange">
+        <van-radio name="1">理科</van-radio>
+        <van-radio name="2">文科</van-radio>
+      </van-radio-group>
+    </view>
+
+     <view class='Score-from'>
+        <text>年份</text>
+        <text>招生批次</text>
+        <text>最高分</text>
+        <text>最低分</text>
+        <text>录取数</text>
+        <text>最低位次</text>
+      </view>
+
+      <view class='Score-from-content' wx:for='{{schoolScoreList}}' wx:key=" *this">
+        <text wx:if='{{item.year}}'>{{item.year}}</text>
+        <text wx:else>-</text>
+        <text wx:if='{{item.gradation}}'>{{item.gradation}}</text>
+        <text wx:else>-</text>
+        <text wx:if='{{item.maxScore}}'>{{item.maxScore}}</text>
+        <text wx:else>-</text>
+        <text wx:if='{{item.score}}'>{{item.score}}</text>
+        <text wx:else>-</text>
+        <text wx:if='{{item.enrollment}}'>{{item.enrollment}}</text>
+        <text wx:else>-</text>
+        <text wx:if='{{item.lastRank}}'>{{item.lastRank}}</text>
+        <text wx:else>-</text>
+      </view>
+    <!--院校分数线-end-->
+  </view>
+  
+</view>

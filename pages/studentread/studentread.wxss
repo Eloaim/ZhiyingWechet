@@ -1,0 +1,5 @@
+/* pages/studentread/student.wxss */
+@import "../../components/news/news.wxss";
+  .learn{
+    margin: 5rpx;
+  }

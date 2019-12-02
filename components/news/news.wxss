@@ -1,0 +1,41 @@
+.img_infos{
+  display: flex;
+  
+  border-bottom: 1px solid#ddd;
+  background-color: white;
+}
+.imgs image {
+  border-radius:13rpx;
+  display: block; 
+  margin: 8rpx;
+  width: 268rpx;
+  height: 200rpx;
+  }
+.imgs{
+ height: 100%;
+}
+.title {
+ display: block;
+  font-size: 33rpx;
+  font-weight: bold;
+  }
+  .viewTimes{
+  display: flex;
+  justify-content: flex-end;
+}
+.viewTimes_imag{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 5rpx;
+  margin-right: 8rpx;
+}
+.infos {
+  display: flex;
+  flex-direction: column ;
+  width: 470rpx;
+  justify-content: space-between;
+  margin-right: 20rpx;
+  }
+  .learn{
+    margin: 5rpx;
+  }

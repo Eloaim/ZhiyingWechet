@@ -1,0 +1,32 @@
+<!--pages/Search-school/Search-school.wxml-->
+<import src="../../components/schoollist/schoollist.wxml"/>
+<van-search
+  value="{{ value }}"
+  placeholder="请输入搜索关键词"
+  show-action
+  bind:search="onSearch"
+  bind:cancel="onCancel"
+  bind:search="search"
+/>
+
+  <!--循环输出列表 begin-->
+   <view wx:for="{{schoollist}}" class="school">
+    
+      <view id="schoolId" class='school-content' bindtap="loadOnce" data-school_id="{{item.school_id}}">
+
+        <text class='school-name'>{{item.school_name}}</text>
+        <view class='school-body'>
+          <text>{{item.school_nature_name}}/{{item.school_type_name}}</text>
+          <text>{{item.province_name}}</text>
+        </view>
+
+      </view>
+      <view class='content-space'></view>
+   
+  </view>
+  <!--循环输出列表 end-->
+  <loading hidden="{{loadHidden}}" bindchange="loadChange">
+    数据加载中...
+  </loading>
+
+  <view bindtap="loadMore" class="loadMore" hidden='{{moreHidden}}'>加载更多</view>

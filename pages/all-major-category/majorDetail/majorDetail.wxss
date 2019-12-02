@@ -1,0 +1,62 @@
+/* pages/all-major-category/majorDetail/majorDetail.wxss */
+.title-body{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(250, 250, 250)
+}
+.title{
+  display: flex;
+  flex-direction: row;
+}
+.title text{
+  font-size: 1.35em;
+  padding: 30rpx 0 30rpx 30rpx 
+}
+.title-content{
+  font-size: 0.85em;
+  padding-left: 30rpx;
+  padding-bottom: 18rpx;
+}
+.detail-body{
+  display: flex;
+  padding-top: 18rpx;
+  padding-left: 10rpx;
+}
+.red-block {
+  width: 10rpx;
+  background-color: #e84c33;
+  border-radius: 100rpx;
+}
+
+.detail-title{
+  padding-left: 18rpx;
+}
+.circle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 178rpx;
+  height: 184rpx
+}
+.circle image{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius:0px;
+  align-self: center;
+}
+.circle text{
+  align-self: center;
+  font-size: 0.75em;
+}
+.mojarLogo{
+  display: flex;
+  justify-content: space-between;
+}
+.circle-content{
+  color: gray;
+}
+.detail-content{
+  font-size: 0.75em;
+  margin:  20rpx;
+}

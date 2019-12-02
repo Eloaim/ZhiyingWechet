@@ -1,0 +1,29 @@
+<!--pages/academic/academic.wxml-->
+<image class='logo' mode='aspectFix' src='/images/zhiyinglogo.jpg' />
+
+<!--高考省份-->
+<van-cell title="高考省份" is-link value="{{value}}" bind:click="showPopup"></van-cell>
+<van-popup show="{{ show }}" position="bottom"  custom-style="height: 40%;" bind:close="onClose">
+<van-picker show-toolbar columns="{{ columns }}"  default-index="{{ 2 }}" bind:cancel="onClose" bind:confirm="onConfirm" />
+</van-popup>
+
+<!--选择科目-->
+<van-cell title="选择科目">
+  <van-radio-group class='change' value="{{ radio }}" bind:change="onChange">
+    <van-radio name="1">理科</van-radio>
+    <van-radio name="2">文科</van-radio>
+  </van-radio-group>
+</van-cell>
+
+<!--高考成绩-->
+<van-field value="{{ username }}" type="Number" clearable label="高考成绩" placeholder="请输入高考成绩" bind:change="onScoreChange" bind:click-icon="onClickIcon" />
+
+<!--选择批次-->
+<van-cell title="选择批次" is-link value="{{value2}}" bind:click="showPopup2"></van-cell>
+<van-popup show="{{ show2 }}" position="bottom" custom-style="height: 40%;" bind:close="onClose2">
+  <van-picker show-toolbar columns="{{ columns2 }}"  default-index="{{ 2 }}" bind:cancel="onClose2" bind:confirm="onConfirm2" />
+</van-popup>
+
+<view class='button-body'>
+    <button bindtap="goToChooseVolunteer"><text>去填志愿</text></button>
+</view>

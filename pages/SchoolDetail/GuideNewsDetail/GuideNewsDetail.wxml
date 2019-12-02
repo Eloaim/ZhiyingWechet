@@ -1,0 +1,5 @@
+<!--pages/SchoolDetail/GuideNewsDetail/GuideNewsDetail.wxml-->
+<view class='container'>
+  <rich-text wx:if="{{content}}" nodes=" {{content}}"></rich-text>
+  <view class='text' wx:else>该学校暂无招生简章内容</view>
+</view>

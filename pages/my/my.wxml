@@ -1,0 +1,33 @@
+<!--pages/ my/my.wxml-->
+<view class = 'container'>
+<view class="userinfo">
+   <view class="userimage_name">
+   <view class = 'userinfo_image'>
+     <open-data  type="userAvatarUrl"></open-data> 
+   </view>
+   <view class = 'userinfo_username'>
+   <open-data type="userNickName" lang="zh_CN"></open-data>
+   </view>
+    
+   <view class='userinfo_day'>
+      <text class = 'userinfo_text'>距离高考</text>
+      <text class = 'userinfo_text_day'>{{countdown}}</text>
+      <text>天</text>
+   </view>
+  </view>
+</view>
+
+
+  <view class='my_button'>
+    <button class='my_button_text'>
+    <image mode='aspectFix' src='/images/help.png' plain='true' class='my_button_image'></image>
+    <text>帮助中心</text>
+    </button>
+
+    <button class='my_button_text'>
+    <image mode='aspectFix' src='/images/about.png' plain='true' class='my_button_image'></image>
+    <text>关于我们</text>
+    </button>
+  </view>
+</view>
+

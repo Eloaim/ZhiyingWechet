@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/my",
+    "pages/zhiclass/zhiclass",
+    "pages/SchoolSearch/SchoolSearch",
+    "pages/studentread/studentread",
+    "pages/detail/detail",
+    "pages/Search-school/Search-school",
+    "pages/SchoolDetail/school-intro/school-intro",
+    "pages/SchoolDetail/SchoolDetail",
+    "pages/academic/academic-from/academic-from",
+    "pages/academic/academic",
+    "pages/studyTest/studyTest",
+    "pages/all-major-category/all-major-category",
+    "pages/SchoolDetail/GuideNewsDetail/GuideNewsDetail",
+    "pages/report/report",
+    "pages/choose-volunteer/choose-volunteer",
+    "pages/add-school/add-school"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/Home_normal.png",
+        "selectedIconPath": "images/Home_pressed.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/Me_normal.png",
+        "selectedIconPath": "images/Me_pressed.png"
+      }
+    ]
+  },
+  "usingComponents": {
+
+   
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,5 @@
+/* pages/SchoolSearch/SchoolSearch.wxss */
+@import "../../components/news/news.wxss";
+  .learn{
+    margin: 5rpx;
+  }

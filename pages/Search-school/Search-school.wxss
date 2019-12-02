@@ -1,0 +1,13 @@
+/* pages/Search-school/Search-school.wxss */
+@import "../../components/schoollist/schoollist.wxss";
+
+.page {
+  background-color: rgb(237, 237, 237);
+}
+
+.loadMore {
+  text-align: center;
+  margin: 15rpx;
+  color: #aaa;
+  font-size: 17px;
+}

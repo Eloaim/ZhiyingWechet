@@ -1,0 +1,21 @@
+/* pages/academic/academic.wxss */
+.logo{
+  width: 100%;
+}
+.change{
+  display: flex;
+}
+.button-body{
+  display: flex;
+  justify-content: center;
+  padding-top: 100rpx;
+  width: 100%;
+}
+.button-body button{
+  width: 634rpx;
+  font-size: 0.85em;
+  background-color: rgb(97, 192, 211);
+}
+.button-body text{
+  color: rgb(250, 253, 254);
+}

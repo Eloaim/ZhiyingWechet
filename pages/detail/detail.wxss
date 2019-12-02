@@ -1,0 +1,5 @@
+/* pages/detail/detail.wxss */
+.container{
+  margin: 24rpx;
+  font-size: 0.75em;
+}

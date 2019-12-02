@@ -1,0 +1,123 @@
+.schooldetail-content{
+  padding: 8px;
+}
+.school-state{
+  display: flex;
+  justify-content: space-around
+}
+.school-log{
+  display: flex;
+}
+.school-log-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.school-log image{
+  width: 144rpx;
+  height: 144rpx;
+  border-radius: 90rpx;
+}
+.circle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 178rpx;
+  height: 130rpx
+}
+.circle image{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius:0px;
+  align-self: center;
+}
+.circle text{
+  align-self: center;
+  font-size: 0.75em;
+}
+.school-tag{
+  display: flex;
+  justify-content: flex-start;
+}
+.school-tag text{
+  padding: 0 6rpx 0 6rpx;
+  font-size: 0.75em;
+  color: gray;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 1px;
+}
+.school_intro{
+display: -webkit-box;
+-webkit-line-clamp: 3;
+overflow: hidden;
+-webkit-box-orient: vertical;
+font-size: 0.75em;
+padding-bottom: 8rpx;
+}
+.GuideNews-viewTime{
+  display: flex;
+  justify-content: space-between;
+}
+.time-viewTime{
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75em;
+  align-self: center;
+}
+.Time{
+  padding-right: 10rpx;
+}
+.Rank-item{
+  display: flex;
+  flex-direction: column;
+  padding: 8rpx;
+}
+.Rank-item text{
+  align-self: center;
+}
+
+.Rank{
+  display: flex;
+  justify-content: space-between;
+}
+.Rank-item-name{
+  border-top: 2px dotted gray;
+}
+.SchoolScoreList{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 8px;
+  border-top: 1px  solid rgb(237, 237, 237);
+}
+.SchoolScoreList-title{
+  border-left: 3px solid rgb(255, 127, 127);
+  padding-left: 7px;
+  border-radius: 3px;
+}
+.change{
+  display: flex;
+}
+.GuideNews-body{
+  border-top:1px solid rgb(237, 237, 237);
+}
+.Score-from{
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.75em;
+}
+.Score-from-content{
+   display: flex;
+  justify-content: space-between;
+  font-size: 0.75em;
+}
+.Score-from-content text{
+  width: 100rpx;
+  height: 40rpx;
+}
+.GuideNews-title{
+  border-left: 3px solid rgb(255, 127, 127);
+  padding-left: 7px;
+  border-radius: 3px;
+}

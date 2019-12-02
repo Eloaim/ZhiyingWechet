@@ -1,0 +1,56 @@
+.container {
+  padding: 0 18rpx;
+}
+.header {
+  display: flex;
+  font-size: 32rpx;
+  padding:32rpx 18rpx;
+  border-bottom: 3rpx solid #D6D6D6;
+}
+.header-left {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+.header-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.voulunteers {
+  text-align: center;
+}
+.vounteers-item {
+  padding: 40rpx 0;
+  position: relative;
+  border-bottom: 3rpx solid #D6D6D6;
+}
+.item-tab {
+  position: absolute;
+  left: 10rpx;
+  top: 0;
+  padding: 10rpx 20rpx;
+  background-color: #FFCD82;
+  color: #FFF;
+  border-radius: 5rpx;
+  font-size: 32rpx;
+}
+.add-school {
+  font-weight: bolder;
+  color: #46CDCD;
+}
+.button-body{
+  display: flex;
+  justify-content: center;
+  padding-top: 50rpx;
+  width: 100%;
+}
+.button-body button{
+  width: 634rpx;
+  font-size: 0.85em;
+  background-color: rgb(97, 192, 211);
+}
+.button-body text{
+  color: rgb(250, 253, 254);
+}
+

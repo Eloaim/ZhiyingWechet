@@ -1,0 +1,12 @@
+<!--pages/zhiclass/zhiclass.wxml-->
+<import src="../../components/news/news.wxml"/>
+  
+
+  <search />
+  <!--循环输出列表 begin-->
+  
+    <view wx:for="{{newslist}}" class="learn">
+      <template is="learnitems" data="{{...item}}" />
+    </view>
+  
+  <!--循环输出列表 end-->

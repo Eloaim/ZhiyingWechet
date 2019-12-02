@@ -1,0 +1,5 @@
+<!--pages/SchoolDetail/school-intro/school-intro.wxml-->
+<view class='container'>
+  <text decode='true'>{{school_intro}}</text>
+</view>
+

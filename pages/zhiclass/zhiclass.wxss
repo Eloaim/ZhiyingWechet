@@ -1,0 +1,5 @@
+/* pages/zhiclass/zhiclass.wxss */
+@import "../../components/news/news.wxss";
+  .learn{
+    margin: 5rpx;
+  }

@@ -1,0 +1,8 @@
+/* pages/SchoolDetail/school-intro/school-intro.wxss */
+.container{
+  padding: 5px;
+  margin: 8px;
+}
+.container text{
+  font-size: 0.85em;
+}

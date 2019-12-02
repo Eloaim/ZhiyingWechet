@@ -1,0 +1,62 @@
+<!--index.wxml-->
+<import src="../../components/news/news.wxml"/>
+<view class="container">
+  <!--Swiper begin-->
+  <view class="selection">
+    <swiper indicator-dots="{{indicatorDots}} " class='index-swiper' autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}   ">
+      <swiper-item class = 'swiper_img' wx:for="{{rankList}}" wx:key=" *this">
+        <navigator url='../detail/detail?uuid={{item.uuid}}'>
+        <image src="/schoolImage{{item.profilePicUrl}}" mode="aspectFix" class="slide-image" />
+        <text class="banner-title">{{item.title}}</text>
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!--Swiper end-->
+
+<view class = 'adduserorder'>
+
+<navigator url='../academic/academic'>
+    <view class="circle">
+      <image mode='aspectFix' src='/images/fill_zhiyuan.png' plain='true' class='adduserorder_image'></image>
+       <view>填志愿</view>
+    </view>
+</navigator>
+
+<navigator url='../Search-school/Search-school'>
+     <view class="circle">
+      <image mode='aspectFix' src='/images/select_school.png' plain='true' class='adduserorder_image'></image>
+       <view>查院校</view>
+    </view>
+</navigator>
+
+<navigator url='../all-major-category/all-major-category'>
+     <view class="circle">
+      <image mode='aspectFix' src='/images/major.png' plain='true' class='adduserorder_image'></image>
+       <view>查专业</view>
+    </view>
+</navigator>
+
+<navigator url='../studyTest/studyTest'>
+     <view class="circle">
+      <image mode='aspectFix' src='/images/specialty.png' plain='true' class='adduserorder_image'></image>
+       <view>学业测评</view>
+    </view>
+</navigator>
+  </view>
+
+  <!--推荐课程-->
+  <view class='header'>
+    <view class='lf-line'></view>
+    <text class='lf-z'>专业百科</text>
+  </view>
+
+  <!--循环输出列表 begin-->
+  
+    <view wx:for="{{newslist}}" class="learn" wx:key=" *this">
+      <template is="learnitems" data="{{...item}}" />
+    </view>
+  
+  <!--循环输出列表 end-->
+
+</view>

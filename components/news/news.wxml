@@ -1,0 +1,17 @@
+<template name="learnitems">
+  <navigator url='../detail/detail?uuid={{uuid}}'>
+      
+      <view class = 'img_infos'>
+        <view class="imgs">
+          <image src="/majorImages{{profilePicUrl}}" class="in-img" background-size="cover" mode="aspectFit"></image>
+        </view>
+        <view class='infos'>
+          <view class="title">{{title}}</view>
+          <view class="viewTimes">
+          <image mode='aspectFix' src='/images/eye.png' class='viewTimes_imag'></image>
+          <text>{{viewTimes}}</text>
+          </view>
+        </view>
+      </view>
+  </navigator>
+</template>

@@ -1,0 +1,13 @@
+.school-content{
+  padding: 8px;
+}
+.school-body{
+  color: gray;
+  font-size: 0.75em;
+  display: flex;
+  justify-content: space-between;
+}
+.content-space{
+  background-color: rgb(237, 237, 237);
+  height: 2px;
+}

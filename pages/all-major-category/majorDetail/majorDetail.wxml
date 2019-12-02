@@ -1,0 +1,92 @@
+<!--pages/all-major-category/majorDetail/majorDetail.wxml-->
+<view class='contain'>
+  <view class='title-body'>
+    <view class='title'>
+      <text>{{majorTile.majorCategoryName}}</text>
+    </view>
+    <text class='title-content'>{{majorTile.majorLevelOneName}} > {{majorTile.majorName}}</text>
+  </view>
+
+  <view class='detail'>
+
+    <view class='detail-body'>
+      <view class="red-block"></view>
+      <view class='detail-title'>专业概览</view>
+    </view>
+
+    <view class='mojarLogo'>
+
+      <view class="circle">
+        <image mode='aspectFix' src='../majorLogo/light.png'> </image>
+        <text>本科</text>
+        <text class='circle-content'>学历层次</text>
+      </view>
+
+      <view class="circle">
+        <image mode='aspectFix' src='../majorLogo/clock.png'> </image>
+        <text>{{majorDetail.educationSystem}}</text>
+        <text class='circle-content'>修业年限</text>
+      </view>
+
+      <view class="circle">
+        <image mode='aspectFix' src='../majorLogo/cup.png'> </image>
+        <text>法学学士</text>
+        <text class='circle-content'>授予学位</text>
+      </view>
+    </view>
+    
+
+  </view>
+
+  <view class='detail'>
+
+    <view class='detail-body'>
+      <view class="red-block"></view>
+      <view class='detail-title'>专业介绍</view>
+    </view>
+
+    <view class='detail-content'>{{majorDetail.majorIntro}}</view>
+  </view>
+
+  <view class='detail'>
+
+    <view class='detail-body'>
+      <view class="red-block"></view>
+      <view class='detail-title'>考研方向</view>
+    </view>
+
+    <view class='detail-content'>{{majorDetail.postgraduateIntro}}</view>
+  </view>
+
+  <view class='detail'>
+
+    <view class='detail-body'>
+      <view class="red-block"></view>
+      <view class='detail-title'>主要课程</view>
+    </view>
+
+    <view class='detail-content'>{{majorDetail.mainCourse}}</view>
+  </view>
+
+  <view class='detail'>
+
+    <view class='detail-body'>
+      <view class="red-block"></view>
+      <view class='detail-title'>就业方向</view>
+    </view>
+
+    <view class='detail-content'>{{majorDetail.graduateDestination}}</view>
+  </view>
+
+  <view class='detail'>
+
+    <view class='detail-body'>
+      <view class="red-block"></view>
+      <view class='detail-title'>学科要求</view>
+    </view>
+
+     <view class='detail-content'>{{majorDetail.studyThreshold}}</view>
+  </view>
+
+
+</view>

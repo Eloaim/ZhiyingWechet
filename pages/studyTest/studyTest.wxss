@@ -1,0 +1,12 @@
+/* pages/studyTest/studyTest.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 300rpx;
+}
+.container text{
+  font-size: 0.85em;
+  color: gray;
+  align-self: center;
+}

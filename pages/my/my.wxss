@@ -1,0 +1,79 @@
+/* pages/ my/my.wxss */
+.container{
+}
+.userinfo{
+  background: rgb(15, 197, 194);
+  height: 425rpx;
+}
+.userimage_name{
+  display:flex;
+  flex-direction:column;
+  align-items: center ;
+  color: white;
+  
+}
+.userinfo_image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius:35px;
+  border: 2px solid white;
+  margin-top: 10px;
+  overflow:hidden;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+.username{
+  font-size: 24px;
+  margin: 10px;
+}
+.userinfo_text{
+  width: 33px;
+  padding: 0 10rpx 0 10rpx;
+}
+.userinfo_text_day{
+  padding: 0 10rpx 0 10rpx;
+  font-size: 20px;
+}
+.adduserorder{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+   align-items: center;
+   height: 135rpx;
+}
+.circle{
+  width: 178rpx;
+  height: 130rpx;
+  background-color: white;
+  color: #999999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+}
+.adduserorder_image{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius:0px;
+}
+.my_button_text{
+  display: flex;
+  text-align: left;
+  background-color: white;
+  align-items: center;
+}
+.my_button_image{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius:0px;
+}
+.userinfo_day{
+  display: flex;
+  align-items: center;
+}
+.userinfo_username{
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+  justify-content: space-between;
+}

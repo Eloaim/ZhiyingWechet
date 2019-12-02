@@ -1,0 +1,5 @@
+<!--pages/studyTest/studyTest.wxml-->
+<view class='container'>
+  <text>为了更精确，请以打开网站方式评测！</text>
+  <text>https://www.zhiyingguihua.com/</text>
+</view>

@@ -1,0 +1,37 @@
+.container {
+  padding: 0 16rpx;
+}
+.school-item {
+  border-top: 3rpx solid #E1E1E1;
+  padding: 10rpx 18rpx;
+}
+.school-item:last-child {
+  border-bottom: 3rpx solid #E1E1E1;
+}
+.title {
+  font-size: 38rpx;
+  font-weight: bold;
+  
+}
+.nature {
+  display: flex;
+  font-size: 32rpx;
+  color: gray;
+  padding: 18rpx 0;
+}
+.nature-1 {
+  flex: 1;
+}
+.nature-2 {
+  flex: 3;
+}
+.grade {
+  display: flex;
+  font-size: 32rpx;
+  color: gray;
+  padding: 10rpx 0;
+  flex-wrap: wrap;
+}
+.grade-item {
+  width: 50%;
+}

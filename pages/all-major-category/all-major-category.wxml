@@ -1,0 +1,29 @@
+<!--pages/all-major-category/all-major-category.wxml-->
+<view class="container">
+  <view class="major1" wx:for="{{majors}}" wx:key="{{index}}majors">
+    <view class="title1">
+      <view class="red-block"></view>
+      <view class="title1-inner">
+        <view class="major1-name">{{item.name}}({{item.major_category_code}})</view>
+        <view class="major1-count">{{item.data.length}}个专业类</view>      
+      </view>
+    </view>
+    <view class="major2" wx:for="{{item.data}}" wx:key="{{index}}majors2">
+      <view class="title2">
+        <view class="title2-inner">
+          <view class="major2-name">{{item.name}}({{item.major_level_one_code}})</view>
+          <view class="major2-count">{{item.data.length}}个专业</view>      
+        </view>
+        <view class="major3">
+       
+          <view class="major3-name" wx:for="{{item.data}}" wx:key="{{index}}majors3">
+            <navigator url='./majorDetail/majorDetail?major_level_two_code={{item.major_level_two_code}}'>
+             <text>{{item.major_name}}</text>
+             </navigator>
+          </view>
+        
+        </view>        
+      </view>
+    </view>
+  </view>
+</view>

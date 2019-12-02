@@ -1,0 +1,11 @@
+<!--pages/studentread/student.wxml-->
+<import src="../../components/news2/news.wxml"/>
+
+
+  <!--循环输出列表 begin-->
+  
+    <view wx:for="{{newslist}}" class="learn">
+      <template is="learnitems" data="{{...item}}" />
+    </view>
+  
+  <!--循环输出列表 end-->

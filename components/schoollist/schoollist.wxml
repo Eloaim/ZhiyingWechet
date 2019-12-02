@@ -1,0 +1,15 @@
+<template name="schoollist">
+
+  <navigator url='../SchoolDetail/SchoolDetail?school_id={{school_id}}'>
+  <view class='school-content' bindtap="loadOnce">
+
+    <text class='school-name'>{{school_name}}</text>
+    <view class='school-body'>
+      <text>{{school_nature_name}}/{{school_type_name}}</text>
+      <text>{{province_name}}</text>
+    </view>
+
+  </view>
+  <view class='content-space'></view>
+  </navigator>
+</template>

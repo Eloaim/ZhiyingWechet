@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="header">
+    <view class="header-left">我的成绩</view>
+    <view class="header-right">黑龙江 理科 {{score}}分</view>
+  </view>
+  <view class="voulunteers">
+    <view class="vounteers-item" wx:for="{{volunteers}}" wx:key="{{index}}v">
+      <view class="item-tab">{{item.value}}</view>
+      <view class="add-school" wx:if="{{item.school==null}}" bindtap="addSchool" data-voulunteerId="{{item.key}}" data-index="{{index}}">+ 添加学校</view>
+      <view class="add-school" wx:else bindtap="addSchool" data-voulunteerId="{{item.key}}" data-index="{{index}}">{{item.school}}</view>
+    </view>
+  </view>
+  <view class="button-body">
+
+  <navigator url='../report/report'>
+    <button bindtap="goNextStep"><text>下一步</text></button>
+  </navigator>
+    
+  </view>
+</view>
