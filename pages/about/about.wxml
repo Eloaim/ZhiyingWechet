@@ -1,0 +1,7 @@
+<!--pages/about/about.wxml-->
+<view class='container'>
+  <text>智赢学业规划网www.zhiyingguihua.com是国内权威高考志愿填报平台，用最精准的大数据和最智能的AI系统，结合学业生涯规划，并运用了国内首创数据“多层次”分析法，让用户更深层次，多维度了解院校，为你量身定制好大学，好专业。
+以智取胜，赢得未来！</text>
+
+</view>
+

@@ -2,7 +2,7 @@
 Page({
   data: {
     indicatorDots: true,
-    autoplay: false,
+    autoplay: true,
     circular: true,
     interval: 3000,
     duration: 1000,

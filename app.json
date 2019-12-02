@@ -16,7 +16,9 @@
     "pages/SchoolDetail/GuideNewsDetail/GuideNewsDetail",
     "pages/report/report",
     "pages/choose-volunteer/choose-volunteer",
-    "pages/add-school/add-school"
+    "pages/add-school/add-school",
+    "pages/help/help",
+    "pages/about/about"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -40,9 +42,6 @@
       }
     ]
   },
-  "usingComponents": {
-
-   
-  },
+  "usingComponents": {},
   "sitemapLocation": "sitemap.json"
 }

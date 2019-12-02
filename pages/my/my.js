@@ -13,6 +13,22 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
+  help:function(){
+    wx.navigateTo({
+      url: '../help/help',
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
+  },
+  about:function(){
+    wx.navigateTo({
+      url: '../about/about',
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
+  },
   onLoad: function (options) {
     var that = this;
     that.countDown();
