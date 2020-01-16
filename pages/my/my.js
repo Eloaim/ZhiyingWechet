@@ -51,14 +51,19 @@ Page({
     var date = new Date(); //现在时间
     var now = date.getTime(); //现在时间戳
     var allTime;
-    if (date.getMonth() + 1 <= 6 && date.getDate() <= 7) {
-      starttime = date.getFullYear();
+    if (date.getMonth() + 1 <= 5 || (date.getMonth() + 1 <= 6 && date.getDate() <= 7)) {
+      //console.log(date)
+      starttime = date.getFullYear()+'';
       starttime = starttime.concat(str2)
       endTime = new Date(starttime).getTime()
       allTime = endTime - now;
     }
     else {
       var n = date.getFullYear() + 1;
+      //console.log(n);
+      //console.log(date);
+      //console.log(date.getMonth());
+      //console.log(date.getDate());
       starttime = n.toString();
       starttime = starttime.concat(str2)
       endTime = new Date(starttime).getTime();

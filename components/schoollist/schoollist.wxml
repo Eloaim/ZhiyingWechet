@@ -5,7 +5,10 @@
 
     <text class='school-name'>{{school_name}}</text>
     <view class='school-body'>
-      <text>{{school_nature_name}}/{{school_type_name}}</text>
+      <text wx:if="{{school_nature_name[0] != null && school_type_name[0] != null}}">{{school_nature_name}}/{{school_type_name}}</text>
+      <text wx:elif="{{school_nature_name[0] === null}}">{{school_type_name}}</text>
+      <text wx:elif="{{school_type_name[0] === null}}">{{school_nature_name}}</text>
+      <text wx:else></text>
       <text>{{province_name}}</text>
     </view>
 
