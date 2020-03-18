@@ -2,8 +2,8 @@
   <view class="school-item" wx:for="{{schools}}" wx:key="{{index}}a" data-scoreAndRank="{{item.scoreAndRank}}" data-schoolName="{{item.school_name}}" bindtap="goBack">
     <view class="title">{{item.school_name}}</view>
     <view class="nature">
-      <view class="nature-1">{{item.school_type_name[0]}}</view>
-      <view class="nature-2">{{item.province_name}}</view>
+      <view class="nature-1" wx:if="{{item.school_type_name[0] != null}}">{{item.school_type_name[0]}}</view>
+      <view class="nature-2" wx:if="{{item.province_name != null}}">{{item.province_name}}</view>
     </view>
     <view class="grade">
       <view class="grade-item" wx:for="{{item.scoreAndRank}}" wx:key="{{index}}dd">{{item.year}}年录取分{{item.score}}</view>

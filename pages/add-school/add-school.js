@@ -31,6 +31,7 @@ Page({
     this.setData({
       index: options.index
     });
+   
     let that = this;
     wx.request({
       url: 'https://www.zhiyingguihua.com:7500/school/miniAppGetSchool',

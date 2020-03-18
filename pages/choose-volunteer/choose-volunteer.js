@@ -57,6 +57,13 @@ Page({
   addSchool(e){
     let index = e.currentTarget.dataset.index;
     let voulunteerid = e.currentTarget.dataset.voulunteerid;
+    //console.log("lotId", this.data.lotId);
+    //console.log("gatherValue", voulunteerid);
+    //console.log("examYear", this.data.examYear);
+    //console.log("score", this.data.score);
+    //console.log("accountCategory", this.data.accountCategory);
+    //console.log("index", index);
+
     wx.navigateTo({
       url: '/pages/add-school/add-school?lotId=' + this.data.lotId + '&gatherValue=' + voulunteerid
         + '&examYear=' + this.data.examYear + '&score=' + this.data.score + '&accountCategory=' + this.data.accountCategory
