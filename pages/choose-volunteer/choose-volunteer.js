@@ -19,7 +19,7 @@ Page({
     this.setData({
       volunteers: app.globalData.volunteers
     })
-    console.log('1111')
+    //console.log('1111')
   },
   /**
    * 生命周期函数--监听页面加载
@@ -57,12 +57,12 @@ Page({
   addSchool(e){
     let index = e.currentTarget.dataset.index;
     let voulunteerid = e.currentTarget.dataset.voulunteerid;
-    //console.log("lotId", this.data.lotId);
-    //console.log("gatherValue", voulunteerid);
-    //console.log("examYear", this.data.examYear);
-    //console.log("score", this.data.score);
-    //console.log("accountCategory", this.data.accountCategory);
-    //console.log("index", index);
+    console.log("lotId", this.data.lotId);
+    console.log("gatherValue", voulunteerid);
+    console.log("examYear", this.data.examYear);
+    console.log("score", this.data.score);
+    console.log("accountCategory", this.data.accountCategory);
+    console.log("index", index);
 
     wx.navigateTo({
       url: '/pages/add-school/add-school?lotId=' + this.data.lotId + '&gatherValue=' + voulunteerid

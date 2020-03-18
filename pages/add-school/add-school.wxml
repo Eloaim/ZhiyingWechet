@@ -6,7 +6,10 @@
       <view class="nature-2" wx:if="{{item.province_name != null}}">{{item.province_name}}</view>
     </view>
     <view class="grade">
-      <view class="grade-item" wx:for="{{item.scoreAndRank}}" wx:key="{{index}}dd">{{item.year}}年录取分{{item.score}}</view>
+      <view class="grade-item" wx:for="{{item.scoreAndRank}}" wx:key="{{index}}dd">
+      <text wx:if = "{{item.score != null}}">{{item.year}}年录取分 {{item.score}}</text>
+      <text wx:elif = "{{item.score === null}}">{{item.year}}年录取分 暂无数据</text>
+      </view>
     </view>
   </view>
 </view>

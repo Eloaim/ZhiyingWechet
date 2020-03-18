@@ -28,6 +28,7 @@ Page({
         lotId: "1"
         score: "600"
      */
+    console.log('options',options);
     this.setData({
       index: options.index
     });
@@ -38,7 +39,7 @@ Page({
       // url: 'http://192.168.1.48:1208/school/miniAppGetSchool',
       data: {
         lotId: parseInt(options.lotId),
-        gatherValue: options.voulunteerid,
+        gatherValue: options.gatherValue,
         examYear: parseInt(options.examYear),
         score: parseInt(options.score),
         accountCategory: parseInt(options.accountCategory)
@@ -50,6 +51,7 @@ Page({
       method: 'post',
       success(res) {
         // console.log(res.data.data);
+        //console.log('options_req', options);
         console.log(res.data.data);
         that.setData({
           schools: res.data.data
