@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    paper:{},
+    paper:'',
   },
 
   /**
@@ -29,7 +29,9 @@ Page({
       success(res) {
         console.log(res);
         that.setData({
-          paper: res.data.data.content
+          paper: res.data.data.content.replace(/<table[^>]*>/gi, function (match, capture) {
+            return match.replace(/width:(.*)/gi, '');
+          })
         })
       }
     })
