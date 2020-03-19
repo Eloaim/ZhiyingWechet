@@ -10,6 +10,8 @@ Page({
   },
   goBack(e){
     console.log('goBack',e)
+    //console.log('school_id', e.currentTarget.dataset.schoolid);
+    app.globalData.volunteers[this.data.index].schoolid = e.currentTarget.dataset.schoolid;
     app.globalData.volunteers[this.data.index].school = e.currentTarget.dataset.schoolname;
     app.globalData.volunteers[this.data.index].scoreAndRank = e.currentTarget.dataset.scoreandrank;
     wx.navigateBack({
@@ -52,7 +54,7 @@ Page({
       success(res) {
         // console.log(res.data.data);
         //console.log('options_req', options);
-        console.log(res.data.data);
+        //console.log('school',res.data.data);
         that.setData({
           schools: res.data.data
         });

@@ -40,30 +40,35 @@ App({
         key: 'a',
         value: 'A志愿',
         school: null,
+        schoolid:null,
         scoreAndRank: []
       },
       {
         key: 'b',
         value: 'B志愿',
         school: null,
+        schoolid: null,
         scoreAndRank: []
       },
       {
         key: 'c',
         value: 'C志愿',
         school: null,
+        schoolid: null,
         scoreAndRank: []
       },
       {
         key: 'd',
         value: 'D志愿',
         school: null,
+        schoolid: null,
         scoreAndRank: []
       },
       {
         key: 'e',
         value: 'E志愿',
         school: null,
+        schoolid: null,
         scoreAndRank: []
       }
     ],

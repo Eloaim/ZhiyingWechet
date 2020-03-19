@@ -10,7 +10,7 @@
 />
 
   <!--循环输出列表 begin-->
-   <view wx:for="{{schoollist}}" class="school">
+   <view wx:for="{{schoollist}}" class="school" wx:key="{{index}}">
     
       <view id="schoolId" class='school-content' bindtap="loadOnce" data-school_id="{{item.school_id}}">
 

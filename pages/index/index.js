@@ -48,6 +48,7 @@ Page({
         
         that.setData({
           newslist: res.data.data.majorNewsList,
+          //newslist: res.data.data.courseList,
           rankList: res.data.data.rankNewsList
           
         })

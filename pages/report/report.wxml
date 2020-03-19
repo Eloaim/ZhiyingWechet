@@ -1,15 +1,16 @@
 <!--pages/report/report.wxml-->
 <view class='container'>
   <button bindtap="popConfirm">查看完整报告</button>
-  <view wx:for="{{volunteers}}">
+  <view wx:for="{{volunteers}}" wx:key="{{index}}">
+  <navigator url='../SchoolDetail/SchoolDetail?school_id={{item.schoolid}}'>
     <view wx:if="{{item.school}}" class='report-body'>
       <view class='report-value'>{{item.value}}</view>
       <view class='report-school'>{{item.school}}</view>
 
-      <view class='grade-row'>
-        <view class="grade-item" wx:for="{{item.scoreAndRank}}" >{{item.year}}年录取分{{item.score}}</view>
+      <view class='grade-row' bindtap='ToSchoolDetail'>
+        <view class="grade-item" wx:for="{{item.scoreAndRank}}" wx:key="{{index}}">{{item.year}}年录取分{{item.score}}</view>
       </view>
     </view>
-
+  </navigator>
   </view>
 </view>
