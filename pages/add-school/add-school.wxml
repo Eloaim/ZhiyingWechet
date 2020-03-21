@@ -1,5 +1,5 @@
 <view class="container">
-  <view class="school-item" wx:for="{{schools}}" wx:key="{{index}}a" data-scoreAndRank="{{item.scoreAndRank}}" data-schoolName="{{item.school_name}}" data-schoolId="{{item.school_id}}"  bindtap="goBack">
+  <view class="school-item" wx:if="{{schools.length != 0}}" wx:for="{{schools}}" wx:key="{{index}}a" data-scoreAndRank="{{item.scoreAndRank}}" data-schoolName="{{item.school_name}}" data-schoolId="{{item.school_id}}"  bindtap="goBack">
     <view class="title">{{item.school_name}}</view>
     <view class="nature">
       <view class="nature-1" wx:if="{{item.school_type_name[0] != null}}">{{item.school_type_name[0]}}</view>
@@ -12,4 +12,8 @@
       </view>
     </view>
   </view>
+  <loading hidden="{{loadHidden}}" bindchange="loadChange">
+    数据加载中...
+  </loading>
+  <view class="noschool" wx:if="{{schools.length == 0 && loadHidden == true}}"> 暂无推荐学校 </view>
 </view>

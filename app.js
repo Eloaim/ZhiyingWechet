@@ -38,39 +38,39 @@ App({
     volunteers: [
       {
         key: 'a',
-        value: 'A志愿',
+        value: 'A高风险',
         school: null,
         schoolid:null,
         scoreAndRank: []
       },
       {
         key: 'b',
-        value: 'B志愿',
+        value: 'B中风险',
         school: null,
         schoolid: null,
         scoreAndRank: []
       },
       {
         key: 'c',
-        value: 'C志愿',
+        value: 'C微风险',
         school: null,
         schoolid: null,
         scoreAndRank: []
       },
       {
         key: 'd',
-        value: 'D志愿',
+        value: 'D最佳匹配',
         school: null,
         schoolid: null,
         scoreAndRank: []
       },
       {
         key: 'e',
-        value: 'E志愿',
+        value: 'E完美专业',
         school: null,
         schoolid: null,
         scoreAndRank: []
       }
-    ],
+    ]
   }
 })

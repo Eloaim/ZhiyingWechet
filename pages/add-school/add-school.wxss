@@ -35,3 +35,10 @@
 .grade-item {
   width: 50%;
 }
+.noschool{
+  display: flex;
+  justify-content: center;
+  padding-top: 300rpx;
+  font-size: 0.85em;
+  color: gray; 
+}

@@ -6,6 +6,7 @@ Page({
    */
   data: {
     paper:'',
+    loadHidden: false
   },
 
   /**
@@ -27,12 +28,16 @@ Page({
 
       method: 'post',
       success(res) {
-        console.log(res);
+        //console.log(res);
         that.setData({
           paper: res.data.data.content.replace(/<table[^>]*>/gi, function (match, capture) {
             return match.replace(/width:(.*)/gi, '');
           })
         })
+      },
+      complete: function () {
+        //显示出加载中的提示
+        that.setData({ loadHidden: true })
       }
     })
   },

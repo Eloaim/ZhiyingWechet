@@ -1,4 +1,5 @@
 // pages/academic/academic.js
+const app = getApp();
 Page({
 
   /**
@@ -46,6 +47,13 @@ Page({
     });
   },
   goToChooseVolunteer(e){
+    for(let i = 0;i < 4;i++)//初始化
+    {
+      app.globalData.volunteers[i].schoolid = null;
+      app.globalData.volunteers[i].school = null;
+      app.globalData.volunteers[i].scoreAndRank = null;
+    }
+    
     if (this.data.value==""){
       wx.showToast({
         title: '请选择省份',
@@ -70,7 +78,14 @@ Page({
         icon: 'none'
       })
       return;
-    }else {
+    }
+    else if (isNaN(this.data.score)){
+      wx.showToast({
+        title: '请输入合理数字',
+        icon: 'none'
+      })
+    }
+    else {
       wx.navigateTo({
         url: '/pages/choose-volunteer/choose-volunteer?examYear=2019' + '&lotId=' + this.data.value2 + '&score=' + this.data.score + '&accountCategory=' + this.data.radio,
       })

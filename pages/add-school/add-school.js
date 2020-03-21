@@ -7,6 +7,7 @@ Page({
   data: {
     schools:[],
     index:null,
+    loadHidden:false
   },
   goBack(e){
     console.log('goBack',e)
@@ -54,10 +55,14 @@ Page({
       success(res) {
         // console.log(res.data.data);
         //console.log('options_req', options);
-        //console.log('school',res.data.data);
+        console.log('school',res.data.data);
         that.setData({
-          schools: res.data.data
+          schools: res.data.data,
         });
+      },
+       complete: function () {
+        //显示出加载中的提示
+        that.setData({ loadHidden: true })
       }
     })
   },

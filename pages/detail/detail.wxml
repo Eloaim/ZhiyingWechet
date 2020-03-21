@@ -2,3 +2,6 @@
 <view class='container'>
   <rich-text nodes=" {{paper}}"></rich-text>
 </view>
+ <loading hidden="{{loadHidden}}" bindchange="loadChange">
+    数据加载中...
+  </loading>
