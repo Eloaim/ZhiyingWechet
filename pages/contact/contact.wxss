@@ -1,4 +1,4 @@
-/* pages/studyTest/studyTest.wxss */
+/* pages/contact/contact.wxss */
 .container{
   display: flex;
   flex-direction: column;

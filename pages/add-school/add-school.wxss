@@ -42,3 +42,12 @@
   font-size: 0.85em;
   color: gray; 
 }
+.description{
+  padding-top: 25rpx;
+}
+.description text{
+  display: flex;
+  color: gray;
+  font-size: 0.85em;
+  justify-content: center;
+}

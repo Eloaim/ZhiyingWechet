@@ -1,30 +1,13 @@
-// pages/report/report.js
-const app = getApp();
+// pages/contact/contact.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    volunteers:[]
-  },
-  /*
-  popConfirm: function () {
-    wx.showModal({
-      title: '完整报告请上网站查询',
-      content: 'https://www.zhiyingguihua.com/',
-      success: function (res) {
-        // if (res.confirm) {
-        //   console.log('点击确认回调')
-        // } else {
-        //   console.log('点击取消回调')
-        // }
-      }
-    })
-  },*/
-  ToSchoolDetail: function(){
 
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -43,10 +26,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    this.setData({
-      volunteers: app.globalData.volunteers
-    })
-    console.log('volunteers', app.globalData.volunteers);
+
   },
 
   /**

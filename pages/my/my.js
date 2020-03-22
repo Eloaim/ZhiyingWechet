@@ -21,6 +21,14 @@ Page({
       complete: function(res) {},
     })
   },
+  contact: function () {
+    wx.navigateTo({
+      url: '../contact/contact',
+      success: function (res) { },
+      fail: function (res) { },
+      complete: function (res) { },
+    })
+  },
   about:function(){
     wx.navigateTo({
       url: '../about/about',

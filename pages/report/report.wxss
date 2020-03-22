@@ -24,7 +24,7 @@
   color: #FFF;
   border-radius: 30rpx;
   font-size: 32rpx;
-  width: 88rpx;
+  width: 154rpx;
 }
 .report-school{
   padding-top: 15rpx;

@@ -18,7 +18,9 @@
     "pages/choose-volunteer/choose-volunteer",
     "pages/add-school/add-school",
     "pages/help/help",
-    "pages/about/about"
+    "pages/about/about",
+    "pages/contact/contact",
+    "pages/report/reportDetail/reportDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",

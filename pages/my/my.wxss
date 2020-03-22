@@ -66,6 +66,7 @@
   width: 50rpx;
   height: 50rpx;
   border-radius:0px;
+  padding-right: 10rpx;
 }
 .userinfo_day{
   display: flex;

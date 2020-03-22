@@ -23,7 +23,10 @@
     <image mode='aspectFix' src='/images/help.png' plain='true' class='my_button_image'></image>
     <text>帮助中心</text>
     </button>
-
+     <button class='my_button_text' bindtap='contact'>
+    <image mode='aspectFix' src='/images/contact.png' plain='true' class='my_button_image'></image>
+    <text>联系我们</text>
+    </button>
     <button class='my_button_text' bindtap='about'>
     <image mode='aspectFix' src='/images/about.png' plain='true' class='my_button_image'></image>
     <text>关于我们</text>

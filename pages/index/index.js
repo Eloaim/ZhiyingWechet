@@ -1,8 +1,8 @@
 
 Page({
   data: {
-    indicatorDots: true,
-    autoplay: true,
+    indicatorDots: false,
+    autoplay: false,
     circular: true,
     interval: 3000,
     duration: 1000,

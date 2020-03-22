@@ -1,4 +1,4 @@
-/* pages/studyTest/studyTest.wxss */
+/* pages/report/reportDetail/reportDetail.wxss */
 .container{
   display: flex;
   flex-direction: column;

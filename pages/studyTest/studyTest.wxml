@@ -2,4 +2,6 @@
 <view class='container'>
   <text>为了更精确，请以打开网站方式评测！</text>
   <text>https://www.zhiyingguihua.com/</text>
+  <text class='phone'>联系电话: 18644091056</text>
+  <image src='../../images/QR_code.jpg'  mode="aspectFix"></image>
 </view>

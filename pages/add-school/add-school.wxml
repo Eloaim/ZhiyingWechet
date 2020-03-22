@@ -1,12 +1,12 @@
 <view class="container">
-  <view class="school-item" wx:if="{{schools.length != 0}}" wx:for="{{schools}}" wx:key="{{index}}a" data-scoreAndRank="{{item.scoreAndRank}}" data-schoolName="{{item.school_name}}" data-schoolId="{{item.school_id}}"  bindtap="goBack">
+  <view class="school-item" wx:if="{{schools.length != 0 && loadHidden == true}}" wx:for="{{schools}}" wx:key="{{index}}a" data-scoreAndRank="{{item.scoreAndRank}}" data-schoolName="{{item.school_name}}" data-schoolId="{{item.school_id}}"  bindtap="goBack">
     <view class="title">{{item.school_name}}</view>
     <view class="nature">
       <view class="nature-1" wx:if="{{item.school_type_name[0] != null}}">{{item.school_type_name[0]}}</view>
       <view class="nature-2" wx:if="{{item.province_name != null}}">{{item.province_name}}</view>
     </view>
     <view class="grade">
-      <view class="grade-item" wx:for="{{item.scoreAndRank}}" wx:key="{{index}}dd">
+      <view class="grade-item" wx:for="{{item.scoreAndRank}}" wx:key="{{index}}">
       <text wx:if = "{{item.score != null}}">{{item.year}}年录取分 {{item.score}}</text>
       <text wx:elif = "{{item.score === null}}">{{item.year}}年录取分 --</text>
       </view>
@@ -16,4 +16,8 @@
     数据加载中...
   </loading>
   <view class="noschool" wx:if="{{schools.length == 0 && loadHidden == true}}"> 暂无推荐学校 </view>
+  <view class="description" wx:if="{{loadHidden == true}}">
+  <text>查看完整推荐内容，请用VIP卡登录</text>
+  <text>www.zhiyingguihua.com</text>
+  </view>
 </view>

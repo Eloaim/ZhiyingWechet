@@ -15,6 +15,10 @@
   </van-radio-group>
 </van-cell>
 
+<!--高考年份-->
+<!--
+<van-field value="{{ examYear }}" type="Number" clearable label="高考年份" placeholder="请输入高考年份" bind:change="onYearChange" bind:click-icon="onClickIcon" />
+-->
 <!--高考成绩-->
 <van-field value="{{ username }}" type="Number" clearable label="高考成绩" placeholder="请输入高考成绩" bind:change="onScoreChange" bind:click-icon="onClickIcon" />
 

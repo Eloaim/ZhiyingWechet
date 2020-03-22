@@ -7,11 +7,12 @@ Page({
    */
   data: {
     columns: ['黑龙江'],
-    columns2: ['本一批', '本二批', '专科批'],
+    columns2: ['提前批', '一批A', '一批B', '二批A', '二批B', '三批',"专科"],
     show: false,
     value: "",  //黑龙江
     value2: "", //本科一批
     show2: false,
+    year: 2019,
     score:'', //成绩
     radio:'' //1理科 2文科
   },
@@ -20,6 +21,11 @@ Page({
       score: e.detail
     });
   },
+ /* onYearChange(e) {
+    this.setData({
+      year: e.detail
+    });
+  },*/ //年份输入
   onChange(event) {
     var that = this;
     this.setData({
@@ -47,7 +53,7 @@ Page({
     });
   },
   goToChooseVolunteer(e){
-    for(let i = 0;i < 4;i++)//初始化
+    for(let i = 0;i < 5;i++)//初始化
     {
       app.globalData.volunteers[i].schoolid = null;
       app.globalData.volunteers[i].school = null;
@@ -66,7 +72,13 @@ Page({
         icon: 'none'
       })
       return;
-    } else if (this.data.score == ""){
+    } /*else if (this.data.year == "") {
+      wx.showToast({
+        title: '请输入年份',
+        icon: 'none'
+      })
+      return;
+    }*/ else if (this.data.score == ""){
       wx.showToast({
         title: '请输入成绩',
         icon: 'none'
@@ -79,7 +91,7 @@ Page({
       })
       return;
     }
-    else if (isNaN(this.data.score)){
+    else if (isNaN(this.data.score) /*|| isNaN(this.data.year)*/){
       wx.showToast({
         title: '请输入合理数字',
         icon: 'none'
@@ -87,7 +99,7 @@ Page({
     }
     else {
       wx.navigateTo({
-        url: '/pages/choose-volunteer/choose-volunteer?examYear=2019' + '&lotId=' + this.data.value2 + '&score=' + this.data.score + '&accountCategory=' + this.data.radio,
+        url: '/pages/choose-volunteer/choose-volunteer?examYear=' + this.data.year + '&lotId=' + this.data.value2 + '&score=' + this.data.score + '&accountCategory=' + this.data.radio,
       })
     }
     

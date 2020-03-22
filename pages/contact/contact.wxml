@@ -1,0 +1,5 @@
+<!--pages/contact/contact.wxml-->
+<view class='container'>
+  <text>联系电话: 18644091056</text>
+  <image src='../../images/QR_code.jpg'  mode="aspectFix"></image>
+</view>

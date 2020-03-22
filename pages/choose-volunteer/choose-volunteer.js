@@ -25,21 +25,30 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options);
+    console.log('options_choose',options);
     console.log(app.globalData.volunteers)
     let lotId = null;
     switch (options.lotId){
       case "提前批":
         lotId = 1;
       break;
-      case "本一批":
+      case "一批A":
         lotId = 2;
         break;
-      case "本二批":
+      case "一批B":
         lotId = 3;
         break;
-      case "专科批":
+      case "二批A":
         lotId = 4;
+        break;
+      case "二批B":
+        lotId = 5;
+        break;
+      case "三批":
+        lotId = 6;
+        break;
+      case "专科":
+        lotId = 7;
         break;
       default:
         lotId = 2;

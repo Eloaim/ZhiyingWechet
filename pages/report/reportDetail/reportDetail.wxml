@@ -1,0 +1,7 @@
+<!--pages/report/reportDetail/reportDetail.wxml-->
+<view class='container'>
+  <text>完整报告请在网站进行查看</text>
+  <text>https://www.zhiyingguihua.com/</text>
+  <text class='phone'>联系电话: 18644091056</text>
+  <image src='../../../images/QR_code.jpg'  mode="aspectFix"></image>
+</view>

@@ -3,17 +3,22 @@
 <view class="container">
   <!--Swiper begin-->
   <view class="selection">
-    <swiper indicator-dots="{{indicatorDots}} " class='index-swiper' autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}   ">
+<!-- 
+   <swiper indicator-dots="{{indicatorDots}} " class='index-swiper' autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}   ">
+    
       <swiper-item class = 'swiper_img' wx:for="{{rankList}}" wx:key=" *this">
         <navigator url='../detail/detail?uuid={{item.uuid}}'>
         <image src="/schoolImage{{item.profilePicUrl}}" mode="aspectFix" class="slide-image" />
         <text class="banner-title">{{item.title}}</text>
         </navigator>
       </swiper-item>
+   
     </swiper>
+-->
+     <image src="../../images/index-swiper.png"  class="slide-image" />
   </view>
+  
   <!--Swiper end-->
-
 <view class = 'adduserorder'>
 
 <navigator url='../academic/academic'>

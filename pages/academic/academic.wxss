@@ -1,6 +1,7 @@
 /* pages/academic/academic.wxss */
 .logo{
   width: 100%;
+  /*height: 437rpx;*/
 }
 .change{
   display: flex;
