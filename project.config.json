@@ -51,7 +51,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 5,
+			"current": 4,
 			"list": [
 				{
 					"id": -1,
@@ -76,13 +76,6 @@
 				},
 				{
 					"id": -1,
-					"name": "report",
-					"pathName": "pages/report/report",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
 					"name": "Search-school",
 					"pathName": "pages/Search-school/Search-school",
 					"query": "",
@@ -90,8 +83,9 @@
 				},
 				{
 					"id": -1,
-					"name": "my",
-					"pathName": "pages/my/my",
+					"name": "Score-line",
+					"pathName": "pages/Score-line/Score-line",
+					"query": "",
 					"scene": null
 				}
 			]

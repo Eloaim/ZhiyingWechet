@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    majors:[]
+    majors:[],
+    loadHidden: false
   },
 
   /**
@@ -28,6 +29,10 @@ Page({
         that.setData({
           majors: res.data.data
         });
+      },
+      complete: function () {
+        //显示出加载中的提示
+        that.setData({ loadHidden: true })
       }
     })
   },

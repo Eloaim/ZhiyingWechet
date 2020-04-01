@@ -1,0 +1,8 @@
+/* pages/GaokaoScoreUp/GaokaoScoreUp.wxss */
+.bg{
+  height: 100vh;
+  width: 100%;
+}
+.container{
+ 
+}

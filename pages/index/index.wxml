@@ -1,9 +1,9 @@
 <!--index.wxml-->
-<import src="../../components/news/news.wxml"/>
+<import src="../../components/news/news.wxml" />
 <view class="container">
   <!--Swiper begin-->
   <view class="selection">
-<!-- 
+    <!-- 
    <swiper indicator-dots="{{indicatorDots}} " class='index-swiper' autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}   ">
     
       <swiper-item class = 'swiper_img' wx:for="{{rankList}}" wx:key=" *this">
@@ -15,10 +15,10 @@
    
     </swiper>
 -->
-     <image src="../../images/index-swiper.png"  class="slide-image" />
+    <image src="../../images/index-swiper.png" class="slide-image" />
   </view>
-  
   <!--Swiper end-->
+  <!--功能选项>
 <view class = 'adduserorder'>
 
 <navigator url='../academic/academic'>
@@ -49,14 +49,14 @@
     </view>
 </navigator>
   </view>
-
-  <!--推荐课程-->
+ <-->
+  <!--推荐课程
   <view class='header'>
     <view class='lf-line'></view>
     <text class='lf-z'>专业百科</text>
   </view>
 
-  <!--循环输出列表 begin-->
+  <!--循环输出列表 begin
   
     <view wx:for="{{newslist}}" class="learn" wx:key=" *this">
       <template is="learnitems" data="{{...item}}" />
@@ -64,4 +64,42 @@
   
   <!--循环输出列表 end-->
 
+  <view class="Features">
+  <navigator url='../academic/academic'>
+    <view class='Features_item1'>
+      <image mode='aspectFix' src='/images/1.png' plain='true' class='adduserorder_image'></image>
+       <view>志愿决策</view>
+    </view>
+  </navigator>
+ <navigator url='../Score-line/Score-line'>
+    <view class='Features_item5'>
+      <image mode='aspectFix' src='/images/5.png' plain='true' class='adduserorder_image'></image>
+       <view>批次线</view>
+    </view>
+  </navigator>
+  <navigator url='../Search-school/Search-school'>
+    <view class='Features_item3'>
+      <image mode='aspectFix' src='/images/3.png' plain='true' class='adduserorder_image'></image>
+       <view>查院校</view>
+    </view>
+  </navigator>
+  <navigator url='../all-major-category/all-major-category'>
+    <view class='Features_item4'>
+      <image mode='aspectFix' src='/images/4.png' plain='true' class='adduserorder_image'></image>
+       <view>查专业</view>
+    </view>
+  </navigator>
+  <navigator url='../GaokaoScoreUp/GaokaoScoreUp'>
+    <view class='Features_item2'>
+      <image mode='aspectFix' src='/images/2.png' plain='true' class='adduserorder_image'></image>
+       <view>高考提分</view>
+    </view>
+  </navigator>
+   <navigator url='../contact/contact'>
+    <view class='Features_item6'>
+      <image mode='aspectFix' src='/images/6.png' plain='true' class='adduserorder_image'></image>
+       <view>问专家</view>
+    </view>
+  </navigator>
+  </view>
 </view>

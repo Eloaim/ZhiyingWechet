@@ -1,0 +1,45 @@
+/* pages/Score-line/Score-line.wxss */
+.h1{
+  font-size: 1.15em;
+  padding-bottom: 15rpx;
+}
+.table{
+  display: flex;
+  flex-direction: column;
+}
+.th{
+  display: flex;
+  background-color: rgb(240, 240, 240);
+  height: 136rpx;
+  font-weight: bold;
+}
+.year{
+  width: 100rpx;
+  padding-left: 15rpx; 
+}
+.col1{
+  align-self:flex-end;
+  padding-right: 180rpx;
+  padding-left:  15rpx;
+}
+.col2{
+  align-self:flex-end;
+  padding-right: 180rpx;
+}
+.col3{
+  align-self:flex-end;
+}
+.tabledata{
+   display: flex;
+   height: 80rpx;
+   border-bottom: 4rpx solid rgb(240, 240, 240);
+   align-items: center;
+}
+.col_1{
+  padding-right: 170rpx;
+  padding-left:  105rpx;
+}
+.col_2{
+  padding-right: 186rpx;
+}
+

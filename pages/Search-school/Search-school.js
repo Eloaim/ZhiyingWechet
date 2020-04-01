@@ -9,7 +9,7 @@ Page({
     inputVal: "",
     schoollist: [],
     init: [],
-    loadHidden: true,
+    loadHidden: false,
     moreHidden: false,
     schoolpage: 1,
     pageLoading: false

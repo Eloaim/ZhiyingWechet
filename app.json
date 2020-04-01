@@ -20,12 +20,14 @@
     "pages/help/help",
     "pages/about/about",
     "pages/contact/contact",
-    "pages/report/reportDetail/reportDetail"
+    "pages/report/reportDetail/reportDetail",
+    "pages/Score-line/Score-line",
+    "pages/GaokaoScoreUp/GaokaoScoreUp"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "智赢学业规划网",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {

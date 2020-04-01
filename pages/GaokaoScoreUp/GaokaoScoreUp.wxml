@@ -1,0 +1,5 @@
+<!--pages/GaokaoScoreUp/GaokaoScoreUp.wxml-->
+<view class="container">
+<image src="../../images/GaokaoScoreUp.png" class="bg"></image>
+</view>
+

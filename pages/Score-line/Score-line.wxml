@@ -1,0 +1,110 @@
+<!--pages/Score-line/Score-line.wxml-->
+<view class='container'> 
+  <view class='h1'>黑龙江批次线</view>
+  <view class='table'>
+    <view class='th'>
+      <view class='year'>2019</view>
+      <view class='col1'>批次</view>
+      <view class='col2'>文科</view>
+      <view class='col3'>理科</view>
+    </view>
+    <view>
+    <view class='tabledata'><view class='col_1'>本一批</view><view class='col_2'>500</view><view class='col_3'>477</view></view>
+    <view class='tabledata'><view class='col_1'>本二批</view><view class='col_2'>424</view><view class='col_3'>372</view></view>
+    <view class='tabledata'><view class='col_1'>本三批</view><view class='col_2'>348</view><view class='col_3'>324</view></view>
+    <view class='tabledata'><view class='col_1'>专科批</view><view class='col_2'>160</view><view class='col_3'>160</view></view>
+    </view>
+  </view>
+
+   <view class='table'>
+    <view class='th'>
+      <view class='year'>2018</view>
+      <view class='col1'>批次</view>
+      <view class='col2'>文科</view>
+      <view class='col3'>理科</view>
+    </view>
+    <view>
+    <view class='tabledata'><view class='col_1'>本一批</view><view class='col_2'>490</view><view class='col_3'>742</view></view>
+    <view class='tabledata'><view class='col_1'>本二批</view><view class='col_2'>406</view><view class='col_3'>353</view></view>
+    <view class='tabledata'><view class='col_1'>本三批</view><view class='col_2'>296</view><view class='col_3'>284</view></view>
+    <view class='tabledata'><view class='col_1'>专科批</view><view class='col_2'>160</view><view class='col_3'>160</view></view>
+    </view>
+  </view>
+
+   <view class='table'>
+    <view class='th'>
+      <view class='year'>2017</view>
+      <view class='col1'>批次</view>
+      <view class='col2'>文科</view>
+      <view class='col3'>理科</view>
+    </view>
+    <view>
+    <view class='tabledata'><view class='col_1'>本一批</view><view class='col_2'>481</view><view class='col_3'>455</view></view>
+    <view class='tabledata'><view class='col_1'>本二批</view><view class='col_2'>400</view><view class='col_3'>335</view></view>
+    <view class='tabledata'><view class='col_1'>本三批</view><view class='col_2'>291</view><view class='col_3'>264</view></view>
+    <view class='tabledata'><view class='col_1'>专科批</view><view class='col_2'>160</view><view class='col_3'>160</view></view>
+    </view>
+  </view>
+
+   <view class='table'>
+    <view class='th'>
+      <view class='year'>2016</view>
+      <view class='col1'>批次</view>
+      <view class='col2'>文科</view>
+      <view class='col3'>理科</view>
+    </view>
+    <view>
+    <view class='tabledata'><view class='col_1'>本一批</view><view class='col_2'>481</view><view class='col_3'>486</view></view>
+    <view class='tabledata'><view class='col_1'>本二批</view><view class='col_2'>401</view><view class='col_3'>369</view></view>
+    <view class='tabledata'><view class='col_1'>本三批</view><view class='col_2'>322</view><view class='col_3'>309</view></view>
+    <view class='tabledata'><view class='col_1'>专科批</view><view class='col_2'>160</view><view class='col_3'>160</view></view>
+    </view>
+  </view>
+
+   <view class='table'>
+    <view class='th'>
+      <view class='year'>2015</view>
+      <view class='col1'>批次</view>
+      <view class='col2'>文科</view>
+      <view class='col3'>理科</view>
+    </view>
+    <view>
+    <view class='tabledata'><view class='col_1'>本一批</view><view class='col_2'>495</view><view class='col_3'>483</view></view>
+    <view class='tabledata'><view class='col_1'>本二批</view><view class='col_2'>410</view><view class='col_3'>371</view></view>
+    <view class='tabledata'><view class='col_1'>本三批</view><view class='col_2'>333</view><view class='col_3'>310</view></view>
+    <view class='tabledata'><view class='col_1'>专科批</view><view class='col_2'>170</view><view class='col_3'>160</view></view>
+    </view>
+  </view>
+
+   <view class='table'>
+    <view class='th'>
+      <view class='year'>2014</view>
+      <view class='col1'>批次</view>
+      <view class='col2'>文科</view>
+      <view class='col3'>理科</view>
+    </view>
+    <view>
+    <view class='tabledata'><view class='col_1'>本一批</view><view class='col_2'>541</view><view class='col_3'>529</view></view>
+    <view class='tabledata'><view class='col_1'>本二批</view><view class='col_2'>454</view><view class='col_3'>414</view></view>
+    <view class='tabledata'><view class='col_1'>本三批</view><view class='col_2'>378</view><view class='col_3'>330</view></view>
+    <view class='tabledata'><view class='col_1'>专科批</view><view class='col_2'>170</view><view class='col_3'>160</view></view>
+    </view>
+  </view>
+
+   <view class='table'>
+    <view class='th'>
+      <view class='year'>2013</view>
+      <view class='col1'>批次</view>
+      <view class='col2'>文科</view>
+      <view class='col3'>理科</view>
+    </view>
+    <view>
+    <view class='tabledata'><view class='col_1'>本一批</view><view class='col_2'>504</view><view class='col_3'>527</view></view>
+    <view class='tabledata'><view class='col_1'>本二批</view><view class='col_2'>424</view><view class='col_3'>437</view></view>
+    <view class='tabledata'><view class='col_1'>本三批</view><view class='col_2'>330</view><view class='col_3'>342</view></view>
+    <view class='tabledata'><view class='col_1'>专科批</view><view class='col_2'>170</view><view class='col_3'>170</view></view>
+    </view>
+  </view>
+</view>
+<!-->
+

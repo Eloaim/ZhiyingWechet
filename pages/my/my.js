@@ -55,15 +55,15 @@ Page({
     var starttime = "";
     var endTime;
     var str1;
-    var str2 = "/06/07 00:00:00";
+    var str2 = "/07/07 00:00:00";
     var date = new Date(); //现在时间
     var now = date.getTime(); //现在时间戳
     var allTime;
-    if (date.getMonth() + 1 <= 5 || (date.getMonth() + 1 <= 6 && date.getDate() <= 7)) {
-      //console.log(date)
+    if (date.getMonth() + 1 <= 6 || (date.getMonth() + 1 <= 7 && date.getDate() <= 7)) {
+      //console.log(date);
       starttime = date.getFullYear()+'';
-      starttime = starttime.concat(str2)
-      endTime = new Date(starttime).getTime()
+      starttime = starttime.concat(str2);
+      endTime = new Date(starttime).getTime();
       allTime = endTime - now;
     }
     else {
@@ -73,7 +73,7 @@ Page({
       //console.log(date.getMonth());
       //console.log(date.getDate());
       starttime = n.toString();
-      starttime = starttime.concat(str2)
+      starttime = starttime.concat(str2);
       endTime = new Date(starttime).getTime();
       allTime = endTime - now;
     }
