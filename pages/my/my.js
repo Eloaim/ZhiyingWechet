@@ -65,6 +65,7 @@ Page({
       starttime = starttime.concat(str2);
       endTime = new Date(starttime).getTime();
       allTime = endTime - now;
+      //console.log(allTime);
     }
     else {
       var n = date.getFullYear() + 1;
@@ -89,7 +90,7 @@ Page({
       })
     } else {
       that.setData({
-        countdown: '00',
+        countdown: '0',
       })
     }
 

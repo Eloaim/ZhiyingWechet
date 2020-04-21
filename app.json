@@ -22,7 +22,8 @@
     "pages/contact/contact",
     "pages/report/reportDetail/reportDetail",
     "pages/Score-line/Score-line",
-    "pages/GaokaoScoreUp/GaokaoScoreUp"
+    "pages/GaokaoScoreUp/GaokaoScoreUp",
+    "pages/academic/declaraction/declaraction"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -65,7 +65,7 @@
   <!--循环输出列表 end-->
 
   <view class="Features">
-  <navigator url='../academic/academic'>
+  <navigator url='../academic/declaraction/declaraction'>
     <view class='Features_item1'>
       <image mode='aspectFix' src='/images/1.png' plain='true' class='adduserorder_image'></image>
        <view>志愿决策</view>

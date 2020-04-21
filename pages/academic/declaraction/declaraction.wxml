@@ -1,0 +1,10 @@
+<!--pages/academic/declaraction/declaraction.wxml-->
+<view class='container'>
+<view class="content-pre">提前批相关事宜：提前批主要是军、警校、招飞、小语种、政治外交安全国防等类的学校和专业，该批次院校含特殊条件限制或对考生自身条件有明确要求，因此，本批次推荐的院校及专业仅供考生参考，有填报提前批意愿的考生，请详询专家，以免因填报失误导致滑档。</view>
+<view class="content-B">B段相关事宜：B段主要是定向、少数民族预科班、农村专项计划、部分中外合作办学专业、院校含特殊条件限制或对考生自身条件有明确要求，因此，本批次推荐的院校及专业仅供考生参考，有填报提前批意愿的考生，请详询专家，以免因填报失误导致滑档。</view>
+</view>
+<view class='button-body'>
+ <navigator url='../academic'>
+    <button bindtap="goToChooseVolunteer"><text>确认并去填报</text></button>
+    </navigator>
+</view>
